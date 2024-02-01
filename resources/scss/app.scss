@@ -6,7 +6,6 @@
 }
 
 body{
-    background-color: orangered;
 }
 
 //header
@@ -47,4 +46,26 @@ header{
     }
 }
 
-//
+//Main
+
+div.hero-zone{
+    height: 50vh;
+    position: relative;
+    background-image: url('https://lh3.googleusercontent.com/sxLk_1GtCAI0lXU9WM53WFzAmUn_PRPdl2KTkk7rzJvP_i2A5YaiJyYTi_pp_K4xiGsIDKCkzWMvE-t35WRlf75dHmg=w640-h400-e365-rj-sc0x00ffffff');
+    background-size: cover;
+
+    div.hero-text{
+        text-align: center;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    div.bottom-shadow{
+        position: absolute;
+        bottom: 0;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(rgba(255,255,255,0.01), white);
+    }
+}
