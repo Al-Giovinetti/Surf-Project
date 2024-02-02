@@ -76,3 +76,22 @@ div.hero-zone{
         background: linear-gradient(rgba(255,255,255,0.01), white);
     }
 }
+
+article.board-card{
+    width: 80%;
+    margin: auto;
+
+    div.left-card{
+        width: 40%;
+    }
+
+    div.center-card{
+        width: 20%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.right-card{
+        width: 40%;
+    }
+}
