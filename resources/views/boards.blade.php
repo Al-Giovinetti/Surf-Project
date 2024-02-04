@@ -19,17 +19,26 @@
             <div class="center-card d-flex">
                 
             </div>
-            <div class="right-card">
-                <h3>Titolo</h3>
-                <div class="star-zone"></div>
+            <div class="right-card d-flex">
+                <div>
+                    <h3>Titolo</h3>
+                    <div class="star-zone">Stelle</div>
+                </div>
+                
                 <ul class="d-flex">
-                    <li>Description</li>
-                    <li>Features</li>
-                    <li>Dimensions</li>
+                    <li id="li-description">Description</li>
+                    <li id="li-features">Features</li>
+                    <li id="li-dimensions">Dimensions</li>
                 </ul>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia officiis ut tempore sit vero aliquam non voluptatibus nihil iste, beatae possimus quod! Consequatur, obcaecati sunt. Beatae consectetur sit rem.
-                </p>
+
+                <div class="info-text"></div>
+
+                <div>
+                    <p id="price"></p>
+                    <button>BUY NOW</button>
+                </div>
+
+                <a href="">View all Board</a>
             </div>
         </article>
         <p>ABOUT US</p>
@@ -39,7 +48,6 @@
 @endsection
 
 @section('js')
-<!-- Creazione dinamica delle img -->
 <script>
     const board = [
         {
@@ -49,10 +57,15 @@
                 'https://www.tuttologicsurf.it/wp-content/uploads/2021/09/IMG_6990-scaled.jpg',
                 'https://i.pinimg.com/originals/dc/e7/b6/dce7b6b09bf3b38c615d051b0063b291.jpg',
                 'https://img.freepik.com/premium-vector/california-retro-t-shirt-design-with-waves-vector-illustration_140710-410.jpg'
-            ]
+            ],
+            'description': 'description aaaaaaaaaaaaaa',
+            'features': 'featuresssssss b',
+            'dimensions': 'dimensions',
+            'price':'$499.99'
         }
     ];
 
+    //Creazione dinamica delle immagini
     const centerCard = document.querySelector('div.center-card');
     const boardImages = board[0].images;
     const imgActive = document.querySelector('div.left-card>img');
@@ -65,6 +78,7 @@
         `
         centerCard.append(boxAndImage);
 
+        //Cambio img + cambio colore bordo img attiva
         boxAndImage.addEventListener('click',function(){
             imgActive.setAttribute("src", image);
             const allDiv = document.querySelectorAll('.center-card>div');
@@ -76,6 +90,33 @@
         })
 
     });
+
+    //Cambio testo a seconda di dove clicco
+    const btnDescription = document.getElementById('li-description');
+    const btnFeatures = document.getElementById('li-features');
+    const btnDimensions = document.getElementById('li-dimensions');
+
+    const divInfoText = document.querySelector('.right-card div.info-text');
+    divInfoText.innerHTML = board[0].description;
+
+    btnDescription.addEventListener('click',function(){
+        divInfoText.innerHTML = board[0].description;
+    })
+
+    btnFeatures.addEventListener('click',function(){
+        divInfoText.innerHTML = board[0].features;
+    })
+
+
+    btnDimensions.addEventListener('click',function(){
+        divInfoText.innerHTML = board[0].dimensions;
+    })
+
+    const pPrice = document.getElementById('price');
+    pPrice.innerHTML= board[0].price;
+
+
+
 
 
 </script>
