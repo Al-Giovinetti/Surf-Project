@@ -17,4 +17,5 @@
 
 @vite('resources/js/app.js')
 </body>
+@yield("js")
 </html>

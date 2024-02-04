@@ -80,18 +80,49 @@ div.hero-zone{
 article.board-card{
     width: 80%;
     margin: auto;
+    height: 70vh;
+    border: 1px solid black;
 
     div.left-card{
         width: 40%;
+        padding: 1rem;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     div.center-card{
         width: 20%;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+        div{
+            height: 80px;
+            width: 80px;
+            margin: 5px;
+            border: 1px solid grey;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        div.active{
+            border: 2px solid blue;
+        }
     }
 
     div.right-card{
         width: 40%;
+
+        li{
+            list-style-type: none;
+        }
     }
 }
