@@ -3,7 +3,7 @@
 @section("title","MAUI")
 
 @section("main")
-<section>
+<section class="board">
     <div class="hero-zone">
         <div class="hero-text">
             <h1>Ride every wave as if it's your last</h1>
@@ -56,6 +56,35 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi autem, beatae repellat sint asperiores nulla reiciendis aliquam hic, blanditiis ex porro necessitatibus ipsa iusto molestias facere maxime magni deleniti.</p>
         <a href="#">Read more</a>
     </div>
+</section>
+
+<section class="insta-form d-flex">
+    <form action="" method="POST">
+        <div>
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <select name="birth_place" id="birth_place">
+                <option value="#">birth place</option>
+                <option value="I">ITA</option>
+                <option value="F">FR</option>
+                <option value="S">SP</option>
+            </select>
+            <input type="date" name="birthday" id="birthday" placeholder="Birthday">
+        </div>
+        <div>
+            <input type="tel" name="phone" id="phone" placeholder="Phone">
+            <input type="text" name="company" id="company" placeholder="Company">
+        </div>
+        <textarea name="mex" id="mex" cols="50%" rows="5" placeholder="Your Message"></textarea>
+        <div>
+            <input type="checkbox" name="privacy" id="privacy">
+            <label for="privacy">Accept privacy policy</label>
+        </div>
+    </form>
 </section>
 
 @endsection

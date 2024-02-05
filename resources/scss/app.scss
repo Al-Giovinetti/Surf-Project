@@ -161,5 +161,18 @@ section.about-us{
         background-color: white;
         padding: 4rem 2rem 2rem 5rem;
     }
+}
 
+section.insta-form{
+    justify-content: flex-end;
+
+    form{
+        width: 50%;
+
+        input,select,textarea{
+            margin: 0.3rem;
+        }
+    }
+
+    
 }
