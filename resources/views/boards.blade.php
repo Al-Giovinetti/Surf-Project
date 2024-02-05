@@ -85,6 +85,21 @@
             <label for="privacy">Accept privacy policy</label>
         </div>
     </form>
+
+    <div class="instagram">
+        <p>INSTAGRAM</p>
+        <div class="instagram-image d-flex">
+            <img src="https://cdn.skuola.net/w1200h687/news_foto/2017/descrizione-mare.jpg" alt="sea">
+            <img src="https://www.mauisurfergirls.com/app/uploads/2017/01/SunsetSurf-Group-e1470962482930.jpg" alt="surfer in sunset">
+            <img src="https://static.displate.com/857x1200/displate/2022-04-16/339f4ad5e952e62eef0b105e37598cb9_cb7327514a100d0c5adab45056929bf5.jpg" alt="surfboard">
+            <img src="https://www.americanoceans.org/wp-content/uploads/2023/09/best-beach-sunset-locations-1024x683.jpeg" alt="sunset beach">
+        </div>
+        <div class="d-flex">
+            <i class="fa-brands fa-instagram"></i>
+            <p>FOLLOW US</p>
+            <p>@surfersco</p>
+        </div>
+    </div>
 </section>
 
 @endsection

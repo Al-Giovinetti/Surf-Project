@@ -9,6 +9,8 @@
     color: white;
 }
 
+//variabili
+
 //header
 header{
     position: absolute;
@@ -167,6 +169,7 @@ section.insta-form{
     justify-content: flex-end;
 
     form{
+        padding-top: 3rem;
         width: 50%;
 
         input,select,textarea{
@@ -174,5 +177,23 @@ section.insta-form{
         }
     }
 
-    
+    div.instagram{
+        width: 40vw;
+        height: 80vh;
+        position: absolute;
+        left: 10%;
+
+        div.instagram-image{
+            flex-wrap: wrap;
+
+            img{
+                width: calc(40vw / 2);
+                height: calc(40vw / 2);
+                object-fit: cover;
+            }
+        }
+        
+    }
+
+
 }
