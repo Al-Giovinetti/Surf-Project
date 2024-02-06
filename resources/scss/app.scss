@@ -170,7 +170,7 @@ section.insta-form{
 
     form{
         padding-top: 3rem;
-        width: 50%;
+        width: 45%;
 
         input,select,textarea{
             margin: 0.3rem;
@@ -179,7 +179,6 @@ section.insta-form{
 
     div.instagram{
         width: 40vw;
-        height: 80vh;
         position: absolute;
         left: 10%;
 
@@ -191,9 +190,33 @@ section.insta-form{
                 height: calc(40vw / 2);
                 object-fit: cover;
             }
-        }
-        
+        }       
     }
+}
 
+footer{
+    background-color: black;
+    justify-content: flex-end;
+    height: 50vh;
 
+    div{
+        padding-top: 6rem;
+        width: 45%;
+
+        ul{
+            height: 50%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0;
+
+            li{
+                list-style-type: none;
+                height: 25%;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }   
+    }
 }

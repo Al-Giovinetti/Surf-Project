@@ -106,6 +106,6 @@
 
 @section('js')
 
-@vite('resources/js/boardCard.js');
+@vite('resources/js/boardCard.js')
 
 @endsection
