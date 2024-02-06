@@ -6,7 +6,7 @@
 <header class="ps-2">
     <div class="my-header-container d-lg-flex justify-content-lg-around">
         <h2>Surfers Co.</h2>
-        <ul class="d-flex justfy-content-lg-around p-lg-2 justfy-content-md-start ps-md-0 ps-0 pb-2">
+        <ul class="d-flex justfy-content-around p-lg-2 ps-md-0 ps-0 pb-2 flex-wrap">
             @foreach ($headerPages as $pages)
             <li class="pe-3">
                 <a href="#">{{ strtoupper($pages) }}</a>
