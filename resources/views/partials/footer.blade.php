@@ -2,28 +2,28 @@
     <div>
         <ul class="d-flex">
             <li>
-                <a href="#" class="c-white">About</a>
+                <a href="#" class="text-light">About</a>
             </li>
             <li>
-                <a href="#" class="c-white">Boards</a>
+                <a href="#" class="text-light">Boards</a>
             </li>
             <li>
-                <a href="#" class="c-white">Accessories</a>
+                <a href="#" class="text-light">Accessories</a>
             </li>
             <li>
-                <a href="#" class="c-white">Blog</a>
+                <a href="#" class="text-light">Blog</a>
             </li>
             <li>
-                <a href="#" class="c-white">Technology</a>
+                <a href="#" class="text-light">Technology</a>
             </li>
             <li>
-                <a href="#" class="c-white">Team</a>
+                <a href="#" class="text-light">Team</a>
             </li>
             <li>
-                <a href="#" class="c-white">Dealers</a>
+                <a href="#" class="text-light">Dealers</a>
             </li>
             <li>
-                <a href="#" class="c-white">Contact us</a>
+                <a href="#" class="text-light">Contact us</a>
             </li>
         
         </ul>

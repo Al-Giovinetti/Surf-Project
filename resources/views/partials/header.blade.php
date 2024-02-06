@@ -4,19 +4,19 @@
 @endphp
 
 <header>
-    <div class="header-container d-flex">
+    <div class="my-header-container d-flex">
         <h2>Surfers Co.</h2>
         <ul class="d-flex">
             @foreach ($headerPages as $pages)
             <li>
-                <a href="">{{ strtoupper($pages) }}</a>
+                <a href="#">{{ strtoupper($pages) }}</a>
             </li>
             @endforeach
         </ul>
-        <div class="socials d-flex">
+        <div class="d-flex" id="social-icons">
             @foreach ($socials as $social)
-                <div class="back-circle d-flex">
-                    <i class="{{ $social }} c-white"></i>
+                <div class="my-back-circle d-flex">
+                    <i class="{{ $social }} text-light"></i>
                 </div>
             @endforeach
         </div>

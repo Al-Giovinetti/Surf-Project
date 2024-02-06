@@ -15,9 +15,9 @@ const board = [
     ];
 
     //Creazione dinamica delle immagini
-    const centerCard = document.querySelector('div.center-card');
+    const centerCard = document.querySelector('div.js-center-card');
     const boardImages = board[0].images;
-    const imgActive = document.querySelector('div.left-card>img');
+    const imgActive = document.querySelector('div.my-left-card>img');
 
     boardImages.forEach(image => {
         const boxAndImage = document.createElement('div');
@@ -30,11 +30,11 @@ const board = [
         //Cambio img + cambio colore bordo img attiva
         boxAndImage.addEventListener('click',function(){
             imgActive.setAttribute("src", image);
-            const allDiv = document.querySelectorAll('.center-card>div');
+            const allDiv = document.querySelectorAll('.js-center-card>div');
             allDiv.forEach(div => {
                 div.className=""; 
             });
-            boxAndImage.classList.add('active');
+            boxAndImage.classList.add('js-active');
 
         })
 
@@ -45,7 +45,7 @@ const board = [
     const btnFeatures = document.getElementById('li-features');
     const btnDimensions = document.getElementById('li-dimensions');
 
-    const divInfoText = document.querySelector('.right-card div.info-text');
+    const divInfoText = document.querySelector('.my-right-card div.js-info-text');
     divInfoText.innerHTML = board[0].description;
 
     btnDescription.addEventListener('click',function(){
