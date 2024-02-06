@@ -47,7 +47,7 @@
 </section>
 
 <section class="my-about-us">
-    <p class="text-center">ABOUT US</p>
+    <p class="text-center my-text-strange">ABOUT US</p>
     <img src="https://i0.wp.com/lazysurfer.app/blog/wp-content/uploads/2021/03/wave-1246560_1920.jpg?fit=1568%2C855&ssl=1" alt="surfer in wave">
     <iframe width="40%" height="300" src="https://www.youtube.com/embed/ZfLSN4mxY0E" title="Top 10 BEST WAVES of NAZARE SWELL 2022." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="my-surfer-co">
@@ -84,11 +84,13 @@
             <input type="checkbox" name="privacy" id="privacy">
             <label for="privacy" class="form-label">Accept privacy policy</label>
         </div>
-        <button type="submit" class="form-control">SEND</button>
+        <button type="submit" class="btn w-25 btn-primary">SEND</button>
     </form>
 
     <div class="my-instagram">
-        <p>INSTAGRAM</p>
+        <div class="row">
+            <p class=" text-center my-text-strange">INSTAGRAM</p>
+        </div>
         <div class="my-instagram-images d-flex">
             <img src="https://cdn.skuola.net/w1200h687/news_foto/2017/descrizione-mare.jpg" alt="sea">
             <img src="https://www.mauisurfergirls.com/app/uploads/2017/01/SunsetSurf-Group-e1470962482930.jpg" alt="surfer in sunset">
