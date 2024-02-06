@@ -22,27 +22,21 @@ header{
 
     div.my-header-container{
         align-items: center;
-        justify-content: space-around;
-        padding: 1rem;
+            ul{
 
-        ul{
-            margin: 0;
-
-            li{
-                list-style-type: none;
-                padding: 0 0.5rem;
-                margin: 0 0.5rem;
-    
-                &:hover{
-                    background-color: white;
-                }
-    
-                a{
-                    text-decoration: none;
-                    color: black;
+                li{
+                    list-style-type: none;
+        
+                    &:hover{
+                        background-color: white;
+                    }
+        
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
             }
-        }
     
         div.my-back-circle{
             background-color: black;
