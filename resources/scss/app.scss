@@ -74,6 +74,9 @@ div.my-hero-zone{
     }
 }
 
+section.bard{
+    margin: auto;
+}
 article.my-board-card{
     width: 80%;
     margin: auto;
@@ -174,7 +177,7 @@ section.my-insta-form{
     }
 
     div.my-instagram{
-        width: 40vw;
+        width: 30vw;
         position: absolute;
         left: 10%;
 
@@ -182,8 +185,8 @@ section.my-insta-form{
             flex-wrap: wrap;
 
             img{
-                width: calc(40vw / 2);
-                height: calc(40vw / 2);
+                width: calc(30vw / 2);
+                height: calc(30vw / 2);
                 object-fit: cover;
             }
         } 
@@ -326,6 +329,26 @@ footer{
                     padding-right: 1rem;
                 }
             }
+        }
+    }
+
+    footer{
+        background-color: black;
+        justify-content: center;
+        height: 30vh;
+    
+        div{
+            padding-top: 2rem;
+            width: 45%;
+    
+            ul{
+                height: 70%;
+    
+                li{
+                    list-style-type: none;
+                    padding: 0.5rem;
+                }
+            }   
         }
     }
 }
