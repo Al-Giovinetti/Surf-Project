@@ -7,9 +7,12 @@ const board = [
                 'https://i.pinimg.com/originals/dc/e7/b6/dce7b6b09bf3b38c615d051b0063b291.jpg',
                 'https://img.freepik.com/premium-vector/california-retro-t-shirt-design-with-waves-vector-illustration_140710-410.jpg'
             ],
-            'description': 'description aaaaaaaaaaaaaa',
-            'features': 'featuresssssss b',
-            'dimensions': 'dimensions',
+            'description': 'description aaaaaaaaaaaaaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
+
+            'features': 'featuresssssss b Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
+
+            'dimensions': 'dimensions Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
+            
             'price':'$499.99'
         }
     ];
