@@ -59,7 +59,8 @@
 </section>
 
 <section class="my-insta-form d-flex container">
-    <form action="" method="POST">
+    <form action="{{ route('mail') }}" method="POST">
+        @csrf
         <div>
             <input type="text" name="name" id="name" placeholder="Name" class="form-control">
         </div>
