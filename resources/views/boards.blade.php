@@ -89,7 +89,7 @@
 
     <div class="my-instagram">
         <div class="row">
-            <p class=" text-center my-text-strange">INSTAGRAM</p>
+            <p class=" text-center my-text-strange col-12" id="instagram-text">INSTAGRAM</p>
         </div>
         <div class="my-instagram-images d-flex">
             <img src="https://cdn.skuola.net/w1200h687/news_foto/2017/descrizione-mare.jpg" alt="sea">
