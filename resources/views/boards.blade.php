@@ -85,7 +85,7 @@
             <input type="checkbox" name="privacy" id="privacy">
             <label for="privacy" class="form-label">Accept privacy policy</label>
         </div>
-        <button type="submit" class="btn w-25 btn-primary">SEND</button>
+        <button type="submit" class="btn w-25 btn-primary" id="send">SEND</button>
     </form>
 
     <div class="my-instagram">
@@ -111,5 +111,6 @@
 @section('js')
 
 @vite('resources/js/boardCard.js')
+@vite('resources/js/formValidation.js')
 
 @endsection
