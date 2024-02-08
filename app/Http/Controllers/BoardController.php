@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewContact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class BoardController extends Controller
 {
@@ -19,8 +21,10 @@ class BoardController extends Controller
             'privacy'=>['accepted']
         ]);
 
-        dd($data);
 
-        
+        Mail::to('giovinettialessio@gmail.com')->send(new NewContact($data['name'], $data['mex'], $data['email']));
+
+        return redirect()->route('home');
+
     }
 }

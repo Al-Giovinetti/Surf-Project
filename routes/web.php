@@ -16,6 +16,6 @@ use App\Http\Controllers\BoardController;
 
 Route::get('/', function () {
     return view('boards');
-});
+})->name('home');
 
 Route::post('/email',[BoardController::class,'sendMail'])->name('mail');
