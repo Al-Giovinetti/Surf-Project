@@ -50,10 +50,10 @@
     <p class="text-center my-text-strange">ABOUT US</p>
     <img src="https://i0.wp.com/lazysurfer.app/blog/wp-content/uploads/2021/03/wave-1246560_1920.jpg?fit=1568%2C855&ssl=1" alt="surfer in wave">
     <iframe width="40%" src="https://www.youtube.com/embed/ZfLSN4mxY0E" title="Top 10 BEST WAVES of NAZARE SWELL 2022." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div class="my-surfer-co">
+    <div class="my-surfer-co text-center">
         <p>WE ARE SRFERS co.</p>
         <p>X</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi autem, beatae repellat sint asperiores nulla reiciendis aliquam hic, blanditiis ex porro necessitatibus ipsa iusto molestias facere maxime magni deleniti.</p>
+        <p class="font-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi autem, beatae repellat sint asperiores nulla reiciendis aliquam hic, blanditiis ex porro necessitatibus ipsa iusto molestias facere maxime magni deleniti.</p>
         <a href="#">Read more</a>
     </div>
 </section>
