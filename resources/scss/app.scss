@@ -2,7 +2,7 @@
 
 // generali
 .my-text-strange{
-    font-size: 5rem;
+    font-size: 4rem;
     opacity: 0.1;
     padding: 0;
     margin: 0;
@@ -158,6 +158,12 @@ article.my-board-card{
         li{
             list-style-type: none;
             padding-right: 1rem;
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+        }
+
+        button{
+            background-color: $blue-surf;
         }
 
         #price{
@@ -169,7 +175,6 @@ article.my-board-card{
 
 section.my-about-us{
     position: relative;
-    padding-top: 2rem;
 
     img{
         width: 100%;
@@ -178,13 +183,14 @@ section.my-about-us{
     iframe{
         position: relative;
         left: 50%; bottom: 100px;
+        height: 300px;
     }
 
     div.my-surfer-co{
         width: 40%;
         height: 60vh;
         position: absolute;
-        left: 0; bottom: 0;
+        left: 0; bottom: 150px;
         background-color: white;
         padding: 4rem 2rem 2rem 5rem;
     }
@@ -201,6 +207,10 @@ section.my-insta-form{
 
         input,select,textarea{
             margin: 0.3rem;
+        }
+
+        ::-webkit-calendar-picker-indicator{
+            color: $blue-surf;
         }
     }
 
@@ -310,6 +320,7 @@ footer{
             position: relative;
             left: 0; bottom: 0;
             width: 80%;
+            height: 500px;
         }
     
         div.my-surfer-co{

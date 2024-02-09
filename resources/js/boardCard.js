@@ -12,11 +12,11 @@ const board = [
                 'https://img.freepik.com/premium-vector/california-retro-t-shirt-design-with-waves-vector-illustration_140710-410.jpg'
             ],
             
-            'description': 'description aaaaaaaaaaaaaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
+            'description': 'Description aaaaaaaaaaaaaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
 
-            'features': 'featuresssssss b Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
+            'features': 'Featuresssssss b Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
 
-            'dimensions': 'dimensions Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
+            'dimensions': 'Dimensions Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odio incidunt neque consequuntur! Quidem, hic inventore aut, voluptatum, nostrum eum expedita sequi quibusdam distinctio consectetur qui? Rem, minus odio.',
             
             'price':'$499.99'
         }
@@ -61,15 +61,24 @@ const board = [
 
     btnDescription.addEventListener('click',function(){
         divInfoText.innerHTML = board[0].description;
+        btnDescription.className="text-dark";
+        btnDimensions.className="text-secondary";
+        btnFeatures.className="text-secondary";
     })
 
     btnFeatures.addEventListener('click',function(){
         divInfoText.innerHTML = board[0].features;
+        btnFeatures.className="text-dark";
+        btnDescription.className="text-secondary";
+        btnDimensions.className="text-secondary";
     })
 
 
     btnDimensions.addEventListener('click',function(){
         divInfoText.innerHTML = board[0].dimensions;
+        btnDimensions.className="text-dark";
+        btnDescription.className="text-secondary";
+        btnFeatures.className="text-secondary";
     })
 
     const pPrice = document.getElementById('price');
@@ -86,7 +95,7 @@ const board = [
 
         for(let i=0; i<myStar; i++){
             let star = document.createElement('i');
-            star.setAttribute('class','fa-solid fa-star my-blue');
+            star.setAttribute('class','fa-solid fa-star text-warning');
             nodeFather.append(star);
         }
 

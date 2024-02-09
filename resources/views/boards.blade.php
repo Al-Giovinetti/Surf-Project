@@ -27,17 +27,17 @@
                 
                 <div>
                     <ul class="d-flex">
-                        <li id="li-description">Description</li>
-                        <li id="li-features">Features</li>
-                        <li id="li-dimensions">Dimensions</li>
+                        <li id="li-description" class="">Description</li>
+                        <li id="li-features" class=" text-secondary">Features</li>
+                        <li id="li-dimensions" class=" text-secondary">Dimensions</li>
                     </ul>
     
-                    <div class="js-info-text"></div>
+                    <div class="js-info-text text-secondary pb-2"></div>
                 </div>
 
                 <div>
-                    <p id="price"></p>
-                    <button>BUY NOW</button>
+                    <p id="price" class="fw-bold"></p>
+                    <button class="btn text-light">BUY NOW</button>
                 </div>
 
                 <a href="#">View all Board</a>
@@ -49,7 +49,7 @@
 <section class="my-about-us">
     <p class="text-center my-text-strange">ABOUT US</p>
     <img src="https://i0.wp.com/lazysurfer.app/blog/wp-content/uploads/2021/03/wave-1246560_1920.jpg?fit=1568%2C855&ssl=1" alt="surfer in wave">
-    <iframe width="40%" height="300" src="https://www.youtube.com/embed/ZfLSN4mxY0E" title="Top 10 BEST WAVES of NAZARE SWELL 2022." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="40%" src="https://www.youtube.com/embed/ZfLSN4mxY0E" title="Top 10 BEST WAVES of NAZARE SWELL 2022." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="my-surfer-co">
         <p>WE ARE SRFERS co.</p>
         <p>X</p>
@@ -68,13 +68,13 @@
             <input type="email" name="email" id="email" placeholder="Email" class="form-control">
         </div>
         <div class="row justify-content-around">
-            <select name="birth_place" id="birth_place" class="col-5 col-form-label">
-                <option value="#">birth place</option>
+            <select name="birth_place" id="birth_place" class="col-5 ">
+                <option selected>birth place</option>
                 <option value="I">ITA</option>
                 <option value="F">FR</option>
                 <option value="S">SP</option>
             </select>
-            <input type="date" name="birthday" id="birthday" placeholder="Birthday" class="col-5 col-form-label">
+            <input type="date" name="birthday" id="birthday" placeholder="Birthday" class="col-5 ">
         </div>
         <div class="row justify-content-around">
             <input type="tel" name="phone" id="phone" placeholder="Phone" class="col-5 col-6-form-label">
@@ -90,7 +90,7 @@
 
     <div class="my-instagram">
         <div class="row">
-            <p class=" text-center my-text-strange col-12" id="instagram-text">INSTAGRAM</p>
+            <p class=" text-center my-text-strange" id="instagram-text">INSTAGRAM</p>
         </div>
         <div class="my-instagram-images d-flex">
             <img src="https://cdn.skuola.net/w1200h687/news_foto/2017/descrizione-mare.jpg" alt="sea">
@@ -99,8 +99,8 @@
             <img src="https://www.americanoceans.org/wp-content/uploads/2023/09/best-beach-sunset-locations-1024x683.jpeg" alt="sunset beach">
         </div>
         <div class="d-flex p-2 bg-light insta-bottom">
-            <i class="fa-brands fa-instagram"></i>
-            <p class="m-0">FOLLOW US</p>
+            <i class="fa-brands fa-instagram my-blue"></i>
+            <p class="m-0 my-blue">FOLLOW US</p>
             <p class="m-0">@surfersco</p>
         </div>
     </div>
