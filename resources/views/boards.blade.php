@@ -21,8 +21,8 @@
             </div>
             <div class="my-right-card d-flex">
                 <div>
-                    <h3>Titolo</h3>
-                    <div class="star-zone">Stelle</div>
+                    <h3 id="board-name"></h3>
+                    <div class="star-zone" id="stars"></div>
                 </div>
                 
                 <div>

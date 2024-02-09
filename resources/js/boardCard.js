@@ -1,6 +1,9 @@
+
 const board = [
         {
-            'name':'board A',
+            'name':'JR Surfboards The Donny Stoker Yellow / Green Rail Fade',
+
+            'stars':4,
 
             'images':[
                 'https://shop.citybeachboardshop.com/prodotti/15483/XXL/15483foto.jpg',
@@ -24,13 +27,17 @@ const board = [
     const boardImages = board[0].images;
     const imgActive = document.querySelector('div.my-left-card>img');
 
-    boardImages.forEach(image => {
+    boardImages.forEach((image, index) => {
         const boxAndImage = document.createElement('div');
         boxAndImage.innerHTML = 
         ` 
             <img src="${image}" alt="board image">
         `
         centerCard.append(boxAndImage);
+
+        if(index == 0){
+            boxAndImage.classList.add('js-active');
+        }
 
         //Cambio img + cambio colore bordo img attiva
         boxAndImage.addEventListener('click',function(){
@@ -42,7 +49,6 @@ const board = [
             boxAndImage.classList.add('js-active');
 
         })
-
     });
 
     //Cambio testo a seconda di dove clicco
@@ -68,3 +74,25 @@ const board = [
 
     const pPrice = document.getElementById('price');
     pPrice.innerHTML= board[0].price;
+
+    const boardName = document.getElementById('board-name');
+    boardName.innerHTML = board[0].name;
+
+    const stars = document.getElementById('stars');
+    getStars(parseInt(board[0].stars), 5, stars);
+
+    function getStars( myStar, maxStar, nodeFather){
+        const differentStar = maxStar - myStar;
+
+        for(let i=0; i<myStar; i++){
+            let star = document.createElement('i');
+            star.setAttribute('class','fa-solid fa-star my-blue');
+            nodeFather.append(star);
+        }
+
+        for(let i=0; i<differentStar; i++){
+            let star=document.createElement('i');
+            star.setAttribute('class','fa-regular fa-star');
+            nodeFather.append(star);
+        }
+    }

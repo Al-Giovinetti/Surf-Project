@@ -8,7 +8,7 @@
         <h2>Surfers Co.</h2>
         <ul class="d-flex justfy-content-around p-lg-2 ps-md-0 ps-0 pb-2 flex-wrap">
             @foreach ($headerPages as $pages)
-            <li class="pe-3">
+            <li class="me-2 p-1">
                 <a href="#">{{ strtoupper($pages) }}</a>
             </li>
             @endforeach
